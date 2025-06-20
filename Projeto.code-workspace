@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "dotnet.defaultSolution": "Projeto.sln",
+        "debug.internalConsoleOptions": "neverOpen"
+    }
+}
