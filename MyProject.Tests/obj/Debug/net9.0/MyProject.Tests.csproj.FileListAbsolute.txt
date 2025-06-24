@@ -171,3 +171,9 @@ C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\obj\Debug\net9.0\refint\MyPro
 C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\obj\Debug\net9.0\MyProject.Tests.pdb
 C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\obj\Debug\net9.0\MyProject.Tests.genruntimeconfig.cache
 C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\obj\Debug\net9.0\ref\MyProject.Tests.dll
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\obj\Debug\net9.0\MyProject.Tests.sourcelink.json
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\bin\Debug\net9.0\Azure.Storage.Blobs.dll
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\bin\Debug\net9.0\Azure.Storage.Common.dll
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\bin\Debug\net9.0\Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs.dll
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\bin\Debug\net9.0\Microsoft.Extensions.Azure.dll
+C:\Users\yjovencio\Desktop\Projeto\MyProject.Tests\bin\Debug\net9.0\System.IO.Hashing.dll

@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using AzureFunctions.DbContexts;
 using Microsoft.EntityFrameworkCore;
+using AzureFunctions;
 
 namespace NewProject.Tests
 {
@@ -28,7 +29,7 @@ namespace NewProject.Tests
         {
             // Arrange
             var options = new DbContextOptionsBuilder<UserDbContext>()
-            .UseInMemoryDatabase(databaseName: "TestDb")
+            .UseInMemoryDatabase(databaseName: "TestDb2")
             .Options;
 
             var context = new UserDbContext(options);
@@ -40,9 +41,6 @@ namespace NewProject.Tests
                 new User { id = 1, username = "joao", email = "joao@example.com", password = "123456" },
                 new User { id = 2, username = "jeferson", email = "jeferson@example.com", password = "123456" }
             };
-
-
-
 
             // Act
             await context.Users.AddRangeAsync(users);
@@ -116,7 +114,7 @@ namespace NewProject.Tests
             var result = await userService.GetUserByIdAsync(4);
 
             //Assert
-            await Assert.ThrowsAsync<DllNotFoundException>(async () =>
+            await Assert.ThrowsAsync<UserNotFoundException>(async () =>
             {
                 await userService.GetUserByIdAsync(5);
             });
@@ -127,7 +125,7 @@ namespace NewProject.Tests
         {
             // Arrange
             var options = new DbContextOptionsBuilder<UserDbContext>()
-                .UseInMemoryDatabase(databaseName: "TestDb")
+                .UseInMemoryDatabase(databaseName: "TestDb1")
                 .Options;
 
             var context = new UserDbContext(options);
